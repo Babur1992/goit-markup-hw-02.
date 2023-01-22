@@ -1,8 +1,12 @@
 :root{
 --bgr:#2E2F42;
 --logo:#4D5AE5;
---text-gero:#FFFFFF;
+--hero:#FFFFFF;
 --text:#434455;
+--ctc-link:#434455;
+--hero:#2E2F42;
+--logo-d:#2E2F42;
+--background: #404BBF;
 }
 
 a{
@@ -13,9 +17,14 @@ a{
     list-style-type:none
 }
 .body{
-    font-family: sans-serif;
+
+    font-family: 'Roboto,'sans-serif;
     font-size: 16px;
+    background-color: #ffffff;
+    color: #2E2F42;
+    
 }
+
 /* Logo */
 .logo{
 font-family: 'Raleway';
@@ -23,123 +32,69 @@ font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.5px;
-color: #4D5AE5;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--logo)
 }
+
 /* Logo Dark */
 .logo-dark{
-    color: #2E2F42;
+    color:var(--logo-d)
 }
 
 .nav-link{
-font-family: 'Roboto';
-font-style: normal;
 font-weight: 500;
-font-size: 16px;
-line-height: 1.5px;
+line-height: 1.5;
 letter-spacing: 0.02em;
+color: #2E2F42;
 }
 /* Contacts */
-.contacts{
-font-family: 'Roboto';
+.contacts-link{
 font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-line-height: 24px;
+line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;
+color:var(--ctc-link)
 }
 /* Hero */
 .hero{
+background-color:#2E2F42;
+}
+/* Button */
+.btn{
+    background: var(--background: #404BBF)
+    cursor: pointer;
+}
+
+.hero-title{
+font-style: normal;
 font-weight: 700;
 font-size: 56px;
 line-height: 60px;
 text-align: center;
 letter-spacing: 0.02em;
-background-color:#2E2F42;
-
-}
-.btn:hover,
-.btn:focus
-/* Button */
-
-.hero-text{
-color: #FFFFFF;
-background-color: #2E2F42;;
-font-weight: 700;
-font-size: 56px;
-line-height: 60px;
-}
-
-/* functiion-2 */
-.function-title{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
+color:#FFFFFF;
 }
 /* function-text */
-.function-text{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+.section-text{
+line-height: 1.5px;
+letter-spacing: 0.02em;
 }
-.function-link{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #434455;
-}
+
 /*  We doing */
-.we-doing2{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
+.section-title{
 font-size: 36px;
-line-height: 40px;
+line-height: 1.5px;
+letter-spacing: 0.02em;
+text-transform: capitalize;
 color: #2E2F42;
 }
-/* our team */
-.our-team{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 40px;
-color: #2E2F42;
-}
-/* img-name */
-.img-name{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-color: #2E2F42;
-}
-/* img-work */
-.img-work{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #434455;
-}
-/* footer */
+
 .logo{
-font-family: 'Raleway';
-font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 21px;
-color: #4D5AE5;
 }
+/* footer */
 .logo-light{
 font-family: 'Raleway';
 font-style: normal;
@@ -151,18 +106,26 @@ position: absolute;
 }
 /* footer-text */
 .footer-text{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+line-height: 1.5;
+letter-spacing: 0.02em;
 color: #E7E9FC;
 }
 .footer{
-
-width: 1440px;
-height: 310px;
-left: 0px;
-top: 2280px;
 background: #2E2F42;
+}
+.nav-link:hover,
+.nav-link:focus{
+    color: #404BBF;
+}
+
+.logo:hover,
+.logo:focus
+
+.btn:hover,
+.btn:focus{
+    background-color:#404BBF;
+}
+.contacts-link:hover,
+.contacts-link:focus{
+    color: #404BBF;
 }
