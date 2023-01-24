@@ -1,12 +1,15 @@
 :root{
 --bgr:#2E2F42;
 --logo:#4D5AE5;
---hero:#FFFFFF;
+--logo-light:#F4F4FD;
 --text:#434455;
 --ctc-link:#434455;
 --hero:#2E2F42;
 --logo-d:#2E2F42;
---background: #404BBF;
+--background:  #4D5AE5;
+--bcr-clr:#ffffff;
+--txt-fot:#E7E9FC;
+--hov:#404BBF;
 }
 
 a{
@@ -20,8 +23,8 @@ a{
 
     font-family: 'Roboto,'sans-serif;
     font-size: 16px;
-    background-color: #ffffff;
-    color: #2E2F42;
+    background-color: var(--bcr-clr)
+    color: var(var(--bgr))
     
 }
 
@@ -31,7 +34,7 @@ font-family: 'Raleway';
 font-style: normal;
 font-weight: 800;
 font-size: 18px;
-line-height: 1.5px;
+line-height: 1.5;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--logo)
@@ -46,7 +49,7 @@ color: var(--logo)
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #2E2F42;
+color: var(--bgr)
 }
 /* Contacts */
 .contacts-link{
@@ -55,77 +58,69 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--ctc-link)
 }
+
 /* Hero */
 .hero{
-background-color:#2E2F42;
+background-color:var(--bgr)
 }
+
 /* Button */
 .btn{
-    background: var(--background: #404BBF)
-    cursor: pointer;
+    background:var(--background)
+    
 }
 
 .hero-title{
-font-style: normal;
-font-weight: 700;
 font-size: 56px;
-line-height: 60px;
+line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
-color:#FFFFFF;
-}
+color:var(--bcr-clr);
 /* function-text */
-.section-text{
-line-height: 1.5px;
-letter-spacing: 0.02em;
 }
+.sub-title{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.5;
+color: var(--bgr);
+}
+.section-text{
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--text);
 
+}
 /*  We doing */
 .section-title{
 font-size: 36px;
-line-height: 1.5px;
+line-height: 1.5;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: #2E2F42;
+color: var(--bgr)
 }
 
-.logo{
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-}
 /* footer */
 .logo-light{
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-color: #F4F4FD;
-position: absolute;
+color: var(--logo-light);
 }
 /* footer-text */
 .footer-text{
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #E7E9FC;
+color: var(--txt-fot)
 }
 .footer{
-background: #2E2F42;
+background: var(--bgr)
 }
 .nav-link:hover,
 .nav-link:focus{
-    color: #404BBF;
+    color: var(--hov)
 }
 
-.logo:hover,
-.logo:focus
-
-.btn:hover,
-.btn:focus{
-    background-color:#404BBF;
-}
 .contacts-link:hover,
 .contacts-link:focus{
-    color: #404BBF;
+    color: var(--hov)
+    
 }
+
+cursor:pointer;
