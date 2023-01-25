@@ -20,7 +20,6 @@ a{
     list-style-type:none
 }
 .body{
-
     font-family: 'Roboto,'sans-serif;
     font-size: 16px;
     background-color: var(--bcr-clr)
@@ -66,8 +65,8 @@ background-color:var(--bgr)
 
 /* Button */
 .btn{
-    background:var(--background)
-    
+    background:var(--background);
+    color:var(--logo-light)
 }
 
 .hero-title{
